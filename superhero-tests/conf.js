@@ -11,6 +11,7 @@ exports.config = {
     specs: [
         './superhero_testsuite/login_spec.js',
         './superhero_testsuite/roster_spec.js',
+        './superhero_testsuite/vote_spec.js',
     ],
 
     jasmineNodeOpts: {
