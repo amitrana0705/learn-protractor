@@ -16,7 +16,7 @@ describe('Login Page Test', function () {
         browser.ignoreSynchronization = true;
 
         // Open browser
-        browser.get('file:///C:/NKP%20Automation/protractor/superhero-website-test/superheros-wesite/index.html');
+        browser.get('file:///C:/Learn%20Automation/my-projects-js/learn-protractor-jason/superhero-website-test/superheros-wesite/index.html');
         browser.manage().window().maximize();
 
     });

@@ -12,20 +12,15 @@ var reporter = new HtmlScreenshotReporter({
     captureOnlyFailedSpecs: true
 });
 
-
 // Jasmine conf file
 exports.config = {
 
     framework: 'jasmine2',
-
     seleniumAddress: 'http://localhost:4444/wd/hub',
-
     capabilities: {
         browserName: 'chrome'
     },
-
     specs: [
-
         './superhero_testsuite/*_spec.js',
         /*
         './superhero_testsuite/login_spec.js',
@@ -36,15 +31,15 @@ exports.config = {
 
         */
     ],
-
+  
     jasmineNodeOpts: {
         showColors: true,
         silent: true,
         defaultTimeoutInterval: 360000,
         print: function () {
         }
-    },
 
+    },
     // Setup the report before any tests start
     beforeLaunch: function () {
         return new Promise(function (resolve) {
@@ -77,5 +72,5 @@ exports.config = {
                 displayDuration: false
             }
         }));
-    }
-}
+    },
+};
